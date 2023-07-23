@@ -11,8 +11,9 @@ export default function FormField() {
 
   const handlelowclick= () =>{
     // console.log('btn clicked' + Text);
+    let lowercasetext = Text.toLowerCase();
     let str = Text.split(" ")
-    let lowercasetext = Text.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
+    // let lowercasetext = Text.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
     setText(lowercasetext)
   }
 

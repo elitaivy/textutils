@@ -51,7 +51,7 @@ export default function FormField() {
     </div>
     <div className="counts">
       <button className="btn btn-primary mt-3 mx-2" >{Text.length} Characters</button>
-      <button className="btn btn-primary mt-3 mx-2" >{Text.split(" ").length} Words</button>
+      <button className="btn btn-primary mt-3 mx-2" >{Text.split(" ").filter((element)=> {return element.length!==0}).length} Words</button>
     </div>
     <div className="preview">
       <text>{Text}</text>
